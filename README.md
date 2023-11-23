@@ -1,9 +1,9 @@
 <p align="center">
-<img src="https://i.pcmag.com/imagery/reviews/066pfhdQmzHcmyEMaZtToWq-77..v1653509931.jpg"/>
+<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>Proton Virtual Private Netowrk</h1>
-This tutorial outlines the Setup and Usage of Virtual Private Networks using Proton VPN.<br />
+<h1>osTicket Installation and Configuration</h1>
+This tutorial outlines the Installation and configuration of osTicket open source ticketing.<br />
 
 
 
@@ -12,7 +12,7 @@ This tutorial outlines the Setup and Usage of Virtual Private Networks using Pro
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Proton VPN
+- Internet Information Services (IIS)
 
 <h2>Operating Systems Used </h2>
 
