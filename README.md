@@ -1,9 +1,9 @@
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+<img src="https://i.pcmag.com/imagery/reviews/066pfhdQmzHcmyEMaZtToWq-77..v1653509931.jpg"/>
 </p>
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+<h1>Proton Virtual Private Netowrk</h1>
+This tutorial outlines the Setup and Usage of Virtual Private Networks using Proton VPN.<br />
 
 
 
@@ -12,7 +12,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Internet Information Services (IIS)
+- Proton VPN
 
 <h2>Operating Systems Used </h2>
 
@@ -28,7 +28,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 ![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/d170dd36-d539-4a25-a15d-9d9237e708da)
 
 
-<h2>Installation Steps</h2>
+<h2>Setup Steps</h2>
 
 
 Install / Enable IIS in Windows WITH
