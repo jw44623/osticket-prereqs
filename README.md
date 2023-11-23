@@ -2,8 +2,8 @@
 <img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
 </p>
 
-<h1>osTicket Installation and Configuration</h1>
-This tutorial outlines the Installation and configuration of osTicket open source ticketing.<br />
+<h1>osTicket Pre-requisites and Installation</h1>
+This tutorial outlines the Prerequisites and Installation of osTicket open source ticketing.<br />
 
 
 
