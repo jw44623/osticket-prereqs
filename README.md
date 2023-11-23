@@ -1,9 +1,17 @@
+# Proton-VPN
+
 <p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
+<img src="https://i.pcmag.com/imagery/reviews/066pfhdQmzHcmyEMaZtToWq-77..v1653509931.jpg"/>
 </p>
 
-<h1>osTicket Pre-requisites and Installation</h1>
-This tutorial outlines the Prerequisites and Installation of osTicket open source ticketing.<br />
+<h1>Proton Virtual Private Netowrk</h1>
+This tutorial outlines the Setup and Usage of Virtual Private Networks using Proton VPN. Here you can explore:
+
+1) How to look up your own IP Address
+
+2) How to look up your IP Address through Remote Desktop Protocol (RDP)
+
+3) How to look up your IP Address through a Virtual Private Network (VPN)<br />
 
 
 
@@ -12,7 +20,7 @@ This tutorial outlines the Prerequisites and Installation of osTicket open sourc
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
-- Internet Information Services (IIS)
+- Proton VPN
 
 <h2>Operating Systems Used </h2>
 
@@ -20,130 +28,47 @@ This tutorial outlines the Prerequisites and Installation of osTicket open sourc
 
 <h2>List of Prerequisites</h2>
 
-- Create a Resource Group
-  ![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/26bbae34-e7b8-4772-a552-b7d205161ded)
-
-- Create a Windows 10 Virtual Machine (VM) with 2 Virtual CPUs and a Linux (Ubuntu 20.04) Virtual Machine with 2 Virtual CPUs
-  ![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/e39dda9e-885a-4774-82cb-50b96cf8eb77)
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/d170dd36-d539-4a25-a15d-9d9237e708da)
+- Create a Proton VPN account
+  ![image](https://github.com/jw44623/Proton-VPN/assets/150184762/f96b12a2-df95-4ef4-9f22-27ce5ae485d7)
 
 
 <h2>Setup Steps</h2>
 
 
-Install / Enable IIS in Windows WITH
-CGI and Common HTTP Features
+Open up a window displaying https://whatismyipaddress.com/ and make note of your current IPv4 Address on a separate document
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/8b59eea9-ce74-4b1a-9e60-64963ea0951f)
 
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/dbee9e2a-6a63-43fa-8f07-0f90a505b862)
+Create a Virtual Machine that takes place in a different region than where you currently are
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/69f4b8dd-32d7-4e8c-bedd-ba333e23a9b8)
 
-</p>
-<br />
+Take the Public IP Address of your newly created Virtual MAchine and Log in to Remote Desktop with it.
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/8753c1e1-2f4e-4d84-a4a2-44d91950fbd9)
 
-Download and install PHP Manager for IIS and the Rewrite Module
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/b2dbcd78-c1c3-4c5b-8faf-abbb01fdff57)
 
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/6efedcd8-0bd6-4405-90e9-5125d6c944ea)
+Through the Remote Desktop, open up https://whatismyipaddress.com/ and notice how the IPv4 is in the region where you selected when making the Virtual Machine
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/17a20f87-2e19-4c88-8009-e50c6b64ef94)
 
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/850b47d2-4eac-40d3-a7cb-eab0d7681c1e)
 
+Log into your Proton VPN account in your virutal machine and download and install Proton VPN client
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/28ef76c7-96cc-4e2d-bcf1-c26fae2e9030)
 
-Create the directory C:\PHP
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/6eec4547-a604-4686-b642-a2b9b93f495b)
 
-Download PHP and unzip the contents into C:\PHP
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/44f5d9d6-76e1-46d4-aea3-c9b55986ed25)
 
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/c4a5503b-b9d8-4fe0-8da5-f468f83009e7)
+Once Open, click "Quick Connect" and the program will connect automtically to the fastest VPN server
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/be223b34-ad21-4135-8ae8-1d4623244145)
 
+Notice the location and IP Address have changed in the top lefthand corner
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/ce2c28c6-c66d-4a21-b6af-8a11fa59d783)
 
-Download and install VC_redist
+Go back to https://whatismyipaddress.com and refresh to view the new IP Address and Location through the VPN
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/3e295345-2fef-4fd3-bf4b-4fcd1a705e5d)
 
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/b976bdfe-18dc-4481-ac1c-66d923d491d0)
-
-Download and install MySQL
-
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/a7ea3c13-13ee-4b07-a5b9-f3f2f2a6e512)
-
-Select Typical Setup,
-Launch Configuration Wizard when you are finished installing, 
-Select Standard Configuration,
-Create a Password
-
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/b948f2bc-32b6-485a-8329-bcd9e4874426)
-
-
-Open IIS as an Administrator
-
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/543c9dd9-c30e-425f-b07c-993c94cd0482)
-
-
-Register PHP from within IIS
-
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/b0ba25c2-7fe5-4e35-b463-323c313eec92)
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/29e7af3c-8f44-448e-94e5-0c27a742503e)
-
-
-Reload IIS (Open IIS, Stop and Start the server)
-
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/8cabb63b-499b-4a5d-80e9-e9c55b5cb54a)
-
-Go to "sites", then "Default", then "osTicket", and click on "Browse *:80"
-
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/af2a7c5c-798a-4b36-8317-6ef39e915cf0)
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/cc860e90-fe40-45fb-90d9-9fd445dcfe54)
+![image](https://github.com/jw44623/Proton-VPN/assets/150184762/35f6328e-bd85-400b-94dd-8cb15bf68af3)
 
 
 
-Install osTicket v1.15.8
-
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/53286e96-8b01-47e6-b8a4-7e440a61fc28)
-
-
-Go back to IIS sites -> Select Default -> Select osTicket
-Double-click PHP Manager
-Click “Enable or disable an extension”
-Enable php_imap.dll
-Enable php_intl.dll
-Enable php_opcache.dll
-Refresh the osTicket site in your browser
-
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/0dbadc96-512b-4d86-8025-cd8c4e57c865)
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/cd21a942-28dd-4d24-aec9-0a8fc767c96b)
-
-
-
-Assign Permissions: ost-config.php
-Select "Disable inheritance", Select "Remove All
-Select New Permissions, Type "Everyone", Select "All"
-
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/8a369e14-8326-4116-881f-410ac09ae015)
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/3dacec3a-cd19-4cf8-b679-2ebce240ebeb)
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/cc1e9777-231b-4765-87ea-0f4afae38c70)
-
-
-
-Set up osTicket in the browser with User and E-mail
-
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/71ad3a42-b20b-4f31-906f-8db777caed6f)
-
-
-
-Download and install HeidiSQL
-
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/a4d87d5b-89d8-46a1-b01b-c698b2cdbcd0)
-
-Open Heidi SQL,
-the create a new session,
-then connect to the session,
-and then create a database
-
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/8046f533-7505-430e-9bec-d31b837ee4d3)
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/164b351b-e427-4ba0-ac91-88cfb0a18cb2)
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/bf99b719-f4b7-4c7c-b153-b7dc7cbbfa3b)
-
-Click Install Now
-
-Delete C:\inetpub\wwwroot\osTicket\setup
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/2abc0220-b924-40ff-86a2-c7a5ea441a30)
-
-Set Permissions to “Read” only on C:\inetpub\wwwroot\osTicket\include\ost-config.php
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/038c2570-2166-4b27-b4cc-b964c197b611)
-![image](https://github.com/jw44623/osticket-prereqs/assets/150184762/67c4d559-e60b-4b70-af38-eff93fddc4ab)
-
-Congratulations! You have successfully installed osticket and are ready to begin ticketing services!
+Congratulations! You are now able to browse the internet through various regions all over the earth.
